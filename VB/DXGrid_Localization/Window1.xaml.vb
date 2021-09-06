@@ -8,6 +8,7 @@ Namespace DXGrid_Localization
 
 	Partial Public Class Window1
 		Inherits Window
+
 		Public Sub New()
 			InitializeComponent()
 			grid.ItemsSource = TaskList.GetData()
@@ -20,45 +21,34 @@ Namespace DXGrid_Localization
 	Public Class TaskList
 		Public Shared Function GetData() As List(Of Task)
 			Dim data As New List(Of Task)()
-			data.Add(New Task() With {.TaskName = "Complete Project A", .StartDate = New DateTime(2009, 7, 1), .EndDate = New DateTime(2009, 7, 10)})
-			data.Add(New Task() With {.TaskName = "Test Website", .StartDate = New DateTime(2009, 7, 10), .EndDate = New DateTime(2009, 7, 12)})
-			data.Add(New Task() With {.TaskName = "Publish Docs", .StartDate = New DateTime(2009, 7, 4), .EndDate = New DateTime(2009, 7, 6)})
+			data.Add(New Task() With {
+				.TaskName = "Complete Project A",
+				.StartDate = New DateTime(2009, 7, 1),
+				.EndDate = New DateTime(2009, 7, 10)
+			})
+			data.Add(New Task() With {
+				.TaskName = "Test Website",
+				.StartDate = New DateTime(2009, 7, 10),
+				.EndDate = New DateTime(2009, 7, 12)
+			})
+			data.Add(New Task() With {
+				.TaskName = "Publish Docs",
+				.StartDate = New DateTime(2009, 7, 4),
+				.EndDate = New DateTime(2009, 7, 6)
+			})
 			Return data
 		End Function
 	End Class
 
 	Public Class Task
-		Private privateTaskName As String
 		Public Property TaskName() As String
-			Get
-				Return privateTaskName
-			End Get
-			Set(ByVal value As String)
-				privateTaskName = value
-			End Set
-		End Property
-		Private privateStartDate As DateTime
 		Public Property StartDate() As DateTime
-			Get
-				Return privateStartDate
-			End Get
-			Set(ByVal value As DateTime)
-				privateStartDate = value
-			End Set
-		End Property
-		Private privateEndDate As DateTime
 		Public Property EndDate() As DateTime
-			Get
-				Return privateEndDate
-			End Get
-			Set(ByVal value As DateTime)
-				privateEndDate = value
-			End Set
-		End Property
 	End Class
 
 	Public Class CustomDXGridLocalizer
 		Inherits GridControlLocalizer
+
 		Protected Overrides Sub PopulateStringTable()
 			MyBase.PopulateStringTable()
 			' Changes the caption of the menu item used to invoke the Total Summary Editor.
