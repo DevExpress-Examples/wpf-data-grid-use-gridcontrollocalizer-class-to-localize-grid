@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # WPF Data Grid - Use the GridControlLocalizer Class to Localize the Grid
 
-This example demonstrates how to localize the [GridControl](http://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl). In this example, the following strings are replaced:
+This sample demonstrates how you can localize the DevExpress WPF [GridControl](http://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl). In this example, the following strings are replaced:
 
 * Customize... -> Customize Totals
 * Totals for 'Column Name' -> Totals Editor
@@ -15,7 +15,7 @@ This example demonstrates how to localize the [GridControl](http://docs.devexpre
 
 <!-- default file list -->
 
-## Files to look at
+## Files to Review
 
 * [Window1.xaml](./CS/DXGrid_Localization/Window1.xaml) (VB: [Window1.xaml](./VB/DXGrid_Localization/Window1.xaml))
 * [Window1.xaml.cs](./CS/DXGrid_Localization/Window1.xaml.cs) (VB: [Window1.xaml.vb](./VB/DXGrid_Localization/Window1.xaml.vb))
