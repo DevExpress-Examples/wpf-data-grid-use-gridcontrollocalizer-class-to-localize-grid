@@ -33,7 +33,7 @@ This sample demonstrates how you can localize the DevExpress WPF [GridControl](h
 
 * [WPF Data Grid - Localize Individual Runtime Strings](https://github.com/DevExpress-Examples/how-to-localize-individual-runtime-resource-strings-e3978)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-gridcontrollocalizer-class-to-localize-grid&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-gridcontrollocalizer-class-to-localize-grid&~~~was_helpful=no)
 
